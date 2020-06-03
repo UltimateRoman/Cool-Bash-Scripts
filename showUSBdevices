@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo cat /var/log/kern.log | grep "Jun  2" | grep usb | grep found | gawk -F"," '{ print $2 $3 }'
